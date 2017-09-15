@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<head>
+	
+	<title>Un-Social-Network</title>	
+	
+	<link rel="stylesheet" type="text/css" href="content/index.css">
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+	<script type="text/javascript" src="scripts/jquery.cookie.js"></script>
+	<script type="text/javascript" src="scripts/jquery-3.2.1.js"></script>
+
+	<script type="text/javascript" src="scripts/posts.js"></script>
+	<script type="text/javascript" src="scripts/freinds.js"></script>
+	<script type="text/javascript" src="scripts/search.js"></script>
+	<script type="text/javascript" src="scripts/comments.js"></script>
+	<script type="text/javascript" src="scripts/messages.js"></script>
+
+</head>
+
+<body background="#333">
+	<div class="navigation">
+		
+		<ul>
+			<h1 class="white" style="line-height:10px">
+				<img class="icon" src="content/images/logo.png" style="vertical-align:middle;"/>
+				<span>Un-Social-Network</span>
+			</h1>
+
+			<li><a href="#" style="line-height:10px"><img class="icon" src="content/images/icons/64*64/home.gif" style="vertical-align:middle;"><span class="desktop">  Home</span></a></li>
+			<li><a href="#" style="line-height:10px"><img class="icon" src="content/images/icons/64*64/freinds.gif" style="vertical-align:middle;"><span class="desktop">  Freinds</span></a></li>
+			<li><a href="#" style="line-height:10px"><img class="icon" src="content/images/icons/64*64/profile.gif" style="vertical-align:middle;"><span class="desktop">  Profile</span></a></li>
+			<li><a href="#" style="line-height:10px"><img class="icon" src="content/images/icons/64*64/settings.gif" style="vertical-align:middle;"><span class="desktop">  Settings</span></a></li>
+			<li class="right desktop"><a href="#" style="line-height:10px"><img class="icon" src="content/images/icons/bell.png" style="vertical-align:middle;"></a></li>
+			<ul class="mobile"><li><a onclick="$('.posts').show();$('.messages').hide();">Posts</a></li><li><a onclick="$('.messages').show();$('.posts').hide();">Messages</a></li></ul>
+		</ul>
+	</div>
+	
+<div class="padding10">
+
+	<div class="posts">
+		<div class="timelineposts"></div>
+			<div class="padding2"><div class="username left">'+posts[index].PostedBy+'</div><div class="postCard"><div class="leftAlign"><p>'+posts[index].PostBody+'</p></div><div class="rightAlign"><button data-id="'+posts[index].PostId+'" class="like"><div class="likeCounter">'+posts[index].Likes+'</div><img src="content/images/icons/64*64/tick.gif" class="icon16"/></button> <button class="like" data-postid="'+posts[index].PostId+'"><div class="likeCounter">1</div><img src="content/images/icons/64*64/cross.gif" class="icon16"/></button></div></div></div>
+	</div>		
+	
+	<div class="messages">
+	
+		<div class="contacts">
+			<div class="horisontalTop">Contacts</div>	
+			
+				
+			<div class="contactGreen"> ben <img src="content/images/icons/64*64/message.gif" class="right icon" onclick="$('.directMessage').show();$('.contacts').hide();	var freindUsername = 'ben';"/><img src="content/images/icons/64*64/profileDark.gif" class="right icon" onclick=""/></div>
+			<div class="contactWhite"> Jhon Thomsam <img src="content/images/icons/64*64/message.gif" class="right icon" onclick="$('.directMessage').show();$('.contacts').hide();"/><img src="content/images/icons/64*64/profileDark.gif" class="right icon" onclick=""/></div>
+			<div class="contactGreen"> Benjamin<img src="content/images/icons/64*64/message.gif" class="right icon" onclick="$('.directMessage').show();$('.contacts').hide();"/><img src="content/images/icons/64*64/profileDark.gif" class="right icon" onclick=""/></div>
+			<div class="contactWhite"> test123 <img src="content/images/icons/64*64/message.gif" class="right icon" onclick="$('.directMessage').show();$('.contacts').hide();"/><img src="content/images/icons/64*64/profileDark.gif" class="right icon" onclick=""/></div>
+		
+		</div>
+		
+		<div class="directMessage">
+			<div class="horisontalTop"><img src="content/images/icons/64*64/back.gif" class="left icon" onclick="$('.contacts').show();$('.directMessage').hide();"/> Username</div>
+			<div class="messageOverFlow">
+				<div class="100WidthPadding2"><div class="messageBuble">sfhsjhfjs</div></div>
+				<div class="100WidthPadding2"><div class="messageBuble">sfhsjhfjs</div></div>
+				<div class="100WidthPadding2"><div class="messageBuble">sfhsjhfjs</div></div>
+				<div class="100WidthPadding2"><div class="messageBuble">sfhsjhfjs</div></div>
+				<div class="100WidthPadding2"><div class="messageBuble">sfhsjhfjs</div></div>
+				<div class="100WidthPadding2"><div class="messageBuble">sfhsjhfjs</div></div>
+				<div class="100WidthPadding2"><div class="messageBuble">sfhsjhfjs</div></div>
+				<div class="100WidthPadding2"><div class="messageBuble">sfhsjhfjs</div></div>
+				<div class="100WidthPadding2"><div class="messageBuble">sfhsjhfjs</div></div>
+				<div class="100WidthPadding2"><div class="messageBuble">sfhsjhfjs</div></div>
+				<div class="100WidthPadding2"><div class="messageBuble">sfhsjhfjs</div></div>
+				<div class="100WidthPadding2"><div class="messageBuble">sfhsjhfjs</div></div>
+			</div>
+			<div class="horisontalBottom">
+				<textarea class="messageTextfeild" type="text"></textarea><button class="send"><img src="content/images/icons/64*64/back.gif" class="icon"/></button>
+			</div>
+		</div>
+	</div>
+
+</div>
+
+</body>
+
+<footer>
+	
+</footer>

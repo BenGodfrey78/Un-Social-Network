@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<head>
+	
+	<title>Un-Social-Network</title>	
+	
+	<link rel="stylesheet" type="text/css" href="content/index.css">
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+	<script type="text/javascript" src="scripts/jquery.cookie.js"></script>
+	<script type="text/javascript" src="scripts/jquery-3.2.1.js"></script>
+
+	<script type="text/javascript" src="scripts/athentication.js"></script>
+	<script type="text/javascript" src="scripts/comments.js"></script>
+	<script type="text/javascript" src="scripts/messages.js"></script>
+
+</head>
+
+<body background="#333">
+	<div class="navigation">
+		
+		<ul>
+			<h1 class="white" style="line-height:10px">
+				<img class="icon" src="content/images/logo.png" style="vertical-align:middle;"/>
+				<span>Un-Social-Network</span>
+			</h1>
+
+			<ul class="mobile"><li><a onclick="$('.posts').show();$('.messages').hide();">Posts</a></li><li><a onclick="$('.messages').show();$('.posts').hide();">Messages</a></li></ul>
+		</ul>
+	</div>
+	
+<div class="padding10">
+
+	<div class="account">
+		<div class="accountCALI">
+
+			<ul><li><a onclick="$('.login').show();$('.create-account').hide();">Login</a></li><li><a onclick="$('.create-account').show();$('.login').hide();">Create Account</a></li></ul><br />
+			
+			<div class="login">
+				<input name="username" placeholder="Username ..." type="text"><p />
+				<input name="password" placeholder="Password ..." type="password"><p />
+				<button id="login" type="submit">Login</button>
+			</div>
+			
+			<div class="create-account">
+				<input name="username" placeholder="Username ..." type="text"><p />
+				<input name="password" placeholder="Email ..." type="email"><p />
+				<input name="password" placeholder="Password ..." type="password"><p />
+				<button id="create-account" type="submit">Create-Account</button>				
+			</div>
+			<div>
+				<p>Please read me <button>What we are?</button></p>
+			</div>
+		</div>
+		
+		<div class="overflowText">
+			<p>The Un-Social-Network is a social network that is not to disimala to facebook. The very big diffrence is it does not come with all the data collection. This means another site will not have any code of ours that tracks you to in anyway trying to collect data of you. When posts, accounts and messages are deleted from are social network they will be destoroyed. They may stay on our servers backups for a while. Just until we can delete the backup. </p>
+			<p>We dont have ad's on the awebsite ether. This is because ads commanly track users and deliver malwear. Also ads code is normaly preprirtery softwear. So how do we make money and sastain the buissnes. We work on a pay what you want which also means you dont have to pay. We think that if you want to use the service you will donate what you can so you can keep using the service that you love and enjoy. We try and accept all types of paiments but bit coin is perefrable because it is safer and more private.</p>
+			<p>All code is open source. This means you can copy, edit and redistrabute. The code is uploaded o git hub so it can be cloned on a server but it is also on un-social-network/code/download if you just want to see what are code is doing and/or how it works.</p>
+			<p>Please take into account that the socila network is still under development so there may not be things we can fourfill for a while. We do intend to do all of the mentianed. Currently I am the soul developer of the social network. I maintain the development of it and pay for it. If you have any concerns about the social network please contact me using the form HERE. I would supply the email but it could be used for spam and I do not want to have to deal with that shit.</p>
+		</div>
+	
+	</div>
+
+</div>
+
+</body>
